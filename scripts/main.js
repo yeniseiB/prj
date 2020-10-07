@@ -19,3 +19,13 @@ personalMovieDB.movies[lastFilm1] = rate1;
 personalMovieDB.movies[lastFilm2] = rate2;
 
 console.log(personalMovieDB);
+
+if (personalMovieDB.count[numberOfFilms] < 10) {
+    console.log('Посмотренно довольно мало фильмов');
+} else if (personalMovieDB.count[numberOfFilms] <= 30) {
+    console.log('Вы скласический зритель');
+} else if (personalMovieDB.count[numberOfFilms] > 30) {
+    console.log('ВЫ КИНОМАН');
+}  else {
+    console.log('Произошла ошибка!');
+}
